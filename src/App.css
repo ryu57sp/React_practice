@@ -1,38 +1,80 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.outline {
+  padding: 50px;
+}
+
+.inputArea {
   text-align: center;
+  width: 300px;
+  height: 70px;
+  background-color: lightblue;
+  padding: 20px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
+input {
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  padding: 6px 16px;
+  margin-right: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  border-radius: 16px;
+  border: none;
+  padding: 4px 16px;
+}
+button:hover {
+  background-color: #FF7FFF;
+  color: #FFF;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 未完了のタスクエリア */
+.imcompleteArea {
+  width: 800px; 
+  min-height: 300px;
+  background-color: lightgray;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+  text-align: center;
+  font-weight: bold;
+}
+.todoList {
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* 完了のタスクエリア */
+.completeArea {
+  width: 800px;
+  min-height: 300px;
+  background-color: lightgreen;
+  margin: auto;
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 15px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.title2 {
+  text-align: center;
+  font-weight: bold;  
 }
